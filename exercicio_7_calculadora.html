@@ -1,0 +1,30 @@
+<html>
+    <script>
+    console.log("Bem vindo(a) a calculadora de operações básicas. Digite conforme a máscara abaixo:");
+    console.log("calculo("Operação Desejada", num1, num2");
+
+    //você pode criar uma função para cada operação ou já inserir a operação como parâmetro.
+    //permitir: SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO, DIVISÃO, RESTO, PORCENTAGEM.
+    function calculo(operacao, num1, num2) {
+        var resultado;
+
+        if (operacao === "SOMA") {
+            resultado =  num1 + num2;
+        } else if (operacao === "SUBTRAÇÃO") {
+            resultado = num1 - num2;
+        } else if (operacao === "MULTIPLICAÇÃO") {
+            resultado = num1 * num2;
+        } else if (operacao === "DIVISÃO") {
+            resultado = num1 / num2;
+        } else if (operacao === "RESTO") {
+            resultado = num1 % num2;
+        } else if (opercao === "PORCENTAGEM") {
+            resultado = num1 * num2 / 100;
+        } else {
+            console.log("A operação digitada não é válida. A operação deve ser digitada com pontuações.");
+        }
+        return resultado;
+    }
+    //será colocado if e else if, porque se fosse só if, if... o sistema mesmo após encontrar "SOMA" pro exemplo, sairia testando todos os outros "if", usando processamento desnecessariamente.
+    </script>
+</html>
