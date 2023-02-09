@@ -1,0 +1,25 @@
+<html>
+    <script>
+    //imc = peso / (altura * altura)
+    function imc(peso, altura) {
+        var imc = peso / (altura * altura);
+
+        if (imc < 18.5) {
+            console.log("Classificacao: Abaixo do Peso.")
+        } else if (imc >= 18.5 && imc <= 24.9) {
+            console.log("Classificacao: Peso Normal.")
+        } else if (imc >= 25 && imc <= 29.9) {
+            console.log("Classificacao: Sobrepeso.")
+        } else if (imc >= 30 && imc <= 34.9) {
+            console.log("Classificacao: Obesidade Grau I.")
+        } else if (imc >= 35 && imc <= 39.9) {
+            console.log("Classificacao: Obesidade Grau II.")
+        } else {
+            console.log("Classificacao: Obesidade Grau III.")
+        }
+        //a opção "return" aqui, servirá para apresentar junto com a frase, o resultado do cálculo, por exemplo: 23.2912299...
+        //se não tiver "return", vai aparecer a frase mas vai aparecer embaixo "undefined".
+        return imc;
+    }
+    </script>
+</html>
