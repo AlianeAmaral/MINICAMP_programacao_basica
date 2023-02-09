@@ -3,24 +3,24 @@
     console.log("Bem vindo(a) a calculadora de operações básicas. Digite conforme a máscara.");
 
     //você pode criar uma função para cada operação ou já inserir a operação como parâmetro.
-    //permitir: SOMA, SUBTRAÇÃO, MULTIPLICAÇÃO, DIVISÃO, RESTO, PORCENTAGEM.
+    //permitir: SOMA, SUBTRACAO, MULTIPLICACAO, DIVISAO, RESTO, PORCENTAGEM.
     function calculo(operacao, num1, num2) {
         var resultado;
 
         if (operacao === "SOMA") {
             resultado =  num1 + num2;
-        } else if (operacao === "SUBTRAÇÃO") {
+        } else if (operacao === "SUBTRACAO") {
             resultado = num1 - num2;
-        } else if (operacao === "MULTIPLICAÇÃO") {
+        } else if (operacao === "MULTIPLICACAO") {
             resultado = num1 * num2;
-        } else if (operacao === "DIVISÃO") {
+        } else if (operacao === "DIVISAO") {
             resultado = num1 / num2;
         } else if (operacao === "RESTO") {
             resultado = num1 % num2;
         } else if (opercao === "PORCENTAGEM") {
             resultado = num1 * num2 / 100;
         } else {
-            console.log("A operação digitada não é válida. A operação deve ser digitada com pontuações.");
+            console.log("A operação digitada não é válida. A operação deve ser digitada sem pontuações.");
         }
         return resultado;
     }
