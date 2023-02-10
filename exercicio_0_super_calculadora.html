@@ -1,0 +1,128 @@
+<html>
+    <script> 
+
+        function soma(a, b) {
+            return a+b;
+        }
+        function subtracaoAb(a, b) {
+            return a-b;
+        }
+        function subtracaoBa(a, b) {
+            return b-a;
+        }
+        function multiplicacao(a, b) {
+            return a*b;
+        }
+        function divisaoAb(a, b) {
+            if(b === 0){
+                return 'erro'
+            }else{
+                return a / b;
+            }
+        }
+        function divisaoBa(a, b) {
+            if(a === 0){
+                return 'erro'
+            }else{
+                return b / a;
+            }
+        }
+        function potenciaAb(a, b) {
+            return Math.pow(a, b);
+        }
+        function potenciaBa(a, b) {
+            return Math.pow(b, a);
+        }
+        function raizA(a) {
+            if(a < 0){
+                return 'numero i';
+            }else{
+                return Math.pow(a, 0.5);
+            }
+        }
+        function raizB(b) {
+            if(b < 0){
+                return 'numero i';
+            }else{
+                return Math.pow(b, 0.5);
+            }
+        }
+        function fatorialA(a) {
+            if (a < 0) {
+                return 'fatorial de numero negativo não existe'
+            }
+            else if (a === 0) {
+                return 1;
+            }
+            else {
+                let fact = 1;
+                for (i = 1; i <= a; i++) {
+                    fact *= i;
+                }
+                return fact;
+            }
+        }
+        function fatorialB(b) {
+            if (b < 0) {
+                return 'fatorial de numero negativo não existe'
+            }
+            else if (b === 0) {
+                return 1;
+            }
+            else {
+                let fact = 1;
+                for (i = 1; i <= b; i++) {
+                    fact *= i;
+                }
+                return fact;
+            }
+        }
+        function porcentagemAb(a, b) {
+            return (b / a)*100;
+
+            //num1 * num2 / 100
+            //a = 3    b = 2
+            //3 eh 150% de 2
+            //(3 * 100) / 2
+
+            //3 eh 66% de 2
+            //(2 * 100) / 3
+
+            //2 * 100
+
+        }
+        function porcentagemBa(a, b) {
+            return (a / b)*100;
+        }
+        function media(a, b) {
+            return (a+b) / 2;
+        }
+
+        function resolveTudo(a,b) {
+            console.log('soma : ',soma(a, b));
+
+            console.log('subtracao A - B : ',subtracaoAb(a, b));
+            console.log('subtracao B - A  : ',subtracaoBa(a, b));
+
+            console.log('multiplicacao : ',multiplicacao(a, b));
+
+            console.log('divisao A por B : ',divisaoAb(a, b));
+            console.log('divisao B por A : ',divisaoBa(a, b));
+
+            console.log('potencia A por B: ',potenciaAb(a, b));
+            console.log('potencia B por A: ',potenciaBa(a, b));
+
+            console.log('raiz de A : ',raizA(a));
+            console.log('raiz de B : ',raizB(b));
+
+            console.log('fatorial de A : ',fatorialA(a));
+            console.log('fatorial de B : ',fatorialB(b));
+
+            console.log('porcentagem A em relação a B : ',porcentagemAb(a, b));
+            console.log('porcentagem B em relação a A  : ',porcentagemBa(a, b));
+
+            console.log('media : ',media(a, b));
+        }
+
+    </script>
+</html>
